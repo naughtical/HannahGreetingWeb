@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting</title>
+    <style>
+        body {background-color: #5f7e6e;}
+        h1 {text-align: center;color:white;font:lucida console;}
+    </style>
+</head>
+<body>
+    <h1 id="greeting"> test goes here </h1>
+    <script>
+        let d = new Date();
+        let time = d.getHours()
+
+        if (time<12 && time>2)
+        {
+            document.getElementById("greeting").innerHTML = "Good Morning!";
+        } else if (time<18) {
+            document.getElementById("greeting").innerHTML = "Good Afternoon!";
+        } else {
+            document.getElementById("greeting").innerHTML = "Good Evening!";
+        };
+
+    </script>
+</body>
+</html>
